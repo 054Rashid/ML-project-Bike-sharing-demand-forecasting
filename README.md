@@ -5,7 +5,7 @@ The goal is to forecast bike rental counts based on environmental and temporal f
 We use feature engineering, EDA, and a Gradient Boosting Regressor to build a powerful model.
 
 
-📑 Project Overview
+Project Overview
 Objective: Predict bike rental counts (continuous values) given historical data.
 Core Challenge: Extracting and engineering features from the datetime column to capture temporal patterns.
 Metric: RMSLE (Root Mean Squared Logarithmic Error).
@@ -29,10 +29,10 @@ Make Predictions: Generate Kaggle submission file.
 ├── bike_sharing_demand.py   # Main Python script
 └── README.md                # Project documentation
 
-⚙️ Requirements
+📁Requirements
 Install dependencies via pip: pip install pandas numpy scikit-learn matplotlib seaborn
 
-📊 Key Features Engineered
+📁Key Features Engineered
 
 Year
 Month
@@ -41,7 +41,7 @@ Hour
 Day of Week
 Month Name
 
-📈 Exploratory Data Analysis
+📁Exploratory Data Analysis
 
 The script visualizes:
 Demand by Hour of the Day
@@ -49,23 +49,23 @@ Demand by Day of the Week
 Demand by Weather Condition
 These plots reveal commuting peaks, weekday vs. weekend trends, and weather impact.
 
-🔧 Model & Evaluation
+📁Model & Evaluation
 Model: Gradient Boosting Regressor
 Hyperparameters: n_estimators=500, learning_rate=0.05, max_depth=4
 Target Transformation: Log-transform of count to reduce skewness.
 Metric: RMSLE on validation set.
 
-🧠 Feature Importance
+📁Feature Importance
 
 The model outputs the top 10 most important features driving bike demand.
 This helps understand which temporal or weather factors matter most.
 
-📝 Output
+📁Output
 submission.csv
 Contains datetime and predicted bike counts.
 Submit directly to Kaggle to get your public leaderboard score.
 
-🔮 Future Improvements
+📁 Future Improvements
 Use time-based cross-validation instead of random splits.
 Try XGBoost or LightGBM for faster training and potentially higher accuracy.
 Add holiday/event features to capture spikes or dips.
